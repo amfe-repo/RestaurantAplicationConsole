@@ -109,7 +109,7 @@ public class OrderInterface extends GInterface {
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
         System.out.println("|                                                              |");
-        System.out.println("|"+this.title+" Client: "+this.actualClient.getClientName()+"                                                         |");
+        System.out.println("|"+this.title+" Client: "+this.actualClient.getClientName()+"                         |");
         System.out.println("|                                                              |");
         System.out.println("|Menus Availables:                                             |");
         System.out.println("|                                                              |");
@@ -118,7 +118,7 @@ public class OrderInterface extends GInterface {
         System.out.print(" Select a option: ");
         
         option = Integer.parseInt(sc.nextLine());
-        
+
         if (option == 1) 
         {
             return new FoodAdultCart();
@@ -135,10 +135,11 @@ public class OrderInterface extends GInterface {
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
         System.out.println("|                                                              |");
-        System.out.println("|"+this.title+" Client: "+this.actualClient.getClientName()+"                                                         |");
+        System.out.println("|"+this.title+" Client: "+this.actualClient.getClientName()+"                            |");
         System.out.println("|                                                              |");
         System.out.println("|                                                              |");
         System.out.print(" Give me cash: ");
+        
         cash = Float.parseFloat(sc.nextLine());
         
         if (cash > price)
@@ -146,11 +147,11 @@ public class OrderInterface extends GInterface {
             actualInvoice = new Invoice(this.actualClient.getClientName(), this.actualClient.getClientDni(),
             price, cash - price);
             
-            System.out.println("PAGO CORRECTO"); 
+            System.out.println(" [PAGO CORRECTO]"); 
         }
         else
         {
-            System.out.println("PAGO INCORRECTO"); 
+            System.out.println(" [PAGO INCORRECTO]"); 
         }
         
          ConsoleTools.finishConsole();
@@ -163,10 +164,11 @@ public class OrderInterface extends GInterface {
         System.out.println("|                                                              |");
         System.out.println("|                           [INVOICE]                          |");
         System.out.println("|                                                              |");
-        System.out.println("| Client: "+this.actualInvoice.getNameInvoice()+"                                                                   |");
-        System.out.println("| DNI: "+this.actualInvoice.getDniClient()+"                                                                           |");
-        System.out.println("| Price: "+this.actualInvoice.getPriceInvoice()+"                                                                     |");
-        System.out.println("| Change: "+this.actualInvoice.getChangeMoney()+"                                                                   |");
+        System.out.println(" Client: "+this.actualInvoice.getNameInvoice()+"              ");
+        System.out.println(" DNI: "+this.actualInvoice.getDniClient()+"                   ");
+        System.out.println(" Price: "+this.actualInvoice.getPriceInvoice()+" $            ");
+        System.out.println(" Change: "+this.actualInvoice.getChangeMoney()+" $            ");
+        
         ConsoleTools.finishConsole();
         
     }

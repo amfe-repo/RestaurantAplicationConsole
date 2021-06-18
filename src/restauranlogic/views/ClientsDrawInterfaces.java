@@ -21,7 +21,7 @@ public class ClientsDrawInterfaces {
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
         System.out.println("|                                                              |");
-        System.out.println("|"+title+" Add Client"+"                                                              |");
+        System.out.println("|"+title+" Add Client"+"                                       |");
         System.out.println("|                                                              |");
         System.out.print(" Name: ");
         name = sc.nextLine();
