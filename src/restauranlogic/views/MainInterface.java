@@ -22,9 +22,7 @@ public class MainInterface extends GInterface {
     public boolean drawView() {
         
         Scanner sc = new Scanner(System.in);
-        
-        
-        
+
         try 
         {
             System.out.println(" -------------------------------------------------------------- ");

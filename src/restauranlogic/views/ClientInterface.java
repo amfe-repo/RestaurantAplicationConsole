@@ -10,7 +10,6 @@ public class ClientInterface extends GInterface {
     
     protected static List<Client> clientsList = new ArrayList<Client>();
     
-    
     public ClientInterface() {
         this.title = "CLIENTS >>";
     }
@@ -20,7 +19,7 @@ public class ClientInterface extends GInterface {
         this.lastView = lastView;
     }
     
-    public void addClient() {
+    private void addClient() {
         
         ClientsDrawInterfaces cdi = new ClientsDrawInterfaces();
         
@@ -30,7 +29,7 @@ public class ClientInterface extends GInterface {
         this.drawView();
             
     }
-    public void updateClient() {
+    private void updateClient() {
         
         ClientsDrawInterfaces cdi = new ClientsDrawInterfaces();
         
@@ -39,25 +38,28 @@ public class ClientInterface extends GInterface {
         this.clientsList.set(cdi.searchId(this.clientsList, cl.getClientDni()), cl);
         
         ConsoleTools.finishConsole();
+        
         this.drawView();
         
     }
-    public void searchClient() {
+    private void searchClient() {
         
         ClientsDrawInterfaces cdi = new ClientsDrawInterfaces();
         cdi.drawSearch(this.clientsList, this.title);
         
         ConsoleTools.finishConsole();
+        
         this.drawView();
         
     }
-    public void deleteClient() {
+    private void deleteClient() {
         
         ClientsDrawInterfaces cdi = new ClientsDrawInterfaces();
         
         this.clientsList.remove(cdi.drawDelete(clientsList, this.title));
         
         ConsoleTools.finishConsole();
+        
         this.drawView();
         
     }
@@ -102,7 +104,7 @@ public class ClientInterface extends GInterface {
     private void menuSelection(){
         
         switch(this.optionInterfaceSelection){
-            case 1:
+            case 1: 
                 this.addClient();
                 break;
             case 2:

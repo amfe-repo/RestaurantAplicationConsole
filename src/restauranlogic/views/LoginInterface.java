@@ -21,7 +21,7 @@ public class LoginInterface extends GInterface {
         this.lastView = lastView; 
     }
     
-    public boolean verifyPassword(String user, String pass){
+    private boolean verifyPassword(String user, String pass){
         return !(!user.equals(this.userName) || !pass.equals(this.userPass));
     }
     
