@@ -16,6 +16,8 @@ public class ClientsDrawInterfaces {
         
         Scanner sc = new Scanner(System.in);
         
+        ConsoleTools.cleanConsole();
+        
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
         System.out.println("|                                                              |");
@@ -38,7 +40,10 @@ public class ClientsDrawInterfaces {
         int id = 0;
         
         dni = drawDniView(titleDNI);
+        
         id = searchId(clientList, dni);
+        
+        ConsoleTools.cleanConsole();
         try 
         {
             System.out.println(" -------------------------------------------------------------- ");
@@ -71,6 +76,7 @@ public class ClientsDrawInterfaces {
         
         id = searchId(clientList, dni);
         
+        ConsoleTools.cleanConsole();
         try {
             System.out.println(" -------------------------------------------------------------- ");
             System.out.println("|                     | BURGERS AND MORE |                     |");
@@ -99,7 +105,10 @@ public class ClientsDrawInterfaces {
         int id = 0;
         
         dni = drawDniView(titleDNI);
+        
         id = searchId(clientList, dni);
+        
+        ConsoleTools.cleanConsole();
         
         try {
             System.out.println(" -------------------------------------------------------------- ");

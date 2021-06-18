@@ -71,6 +71,8 @@ public class OrderInterface extends GInterface {
         
         Scanner sc = new Scanner(System.in);
         
+        ConsoleTools.cleanConsole();
+        
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
         System.out.println("|                                                              |");
@@ -99,8 +101,10 @@ public class OrderInterface extends GInterface {
     private FoodCart findMenu(){
         
         int option = 0;
+        
         Scanner sc = new Scanner(System.in);
         
+        ConsoleTools.cleanConsole();
         
         System.out.println(" -------------------------------------------------------------- ");
         System.out.println("|                     | BURGERS AND MORE |                     |");
@@ -159,10 +163,10 @@ public class OrderInterface extends GInterface {
         System.out.println("|                                                              |");
         System.out.println("|                           [INVOICE]                          |");
         System.out.println("|                                                              |");
-        System.out.println("| Client: "+this.actualInvoice.getNameInvoice()+"              |");
-        System.out.println("| DNI: "+this.actualInvoice.getDniClient()+"                   |");
-        System.out.println("| Price: "+this.actualInvoice.getPriceInvoice()+"              |");
-        System.out.println("| Change: "+this.actualInvoice.getChangeMoney()+"              |");
+        System.out.println("| Client: "+this.actualInvoice.getNameInvoice()+"                                                                   |");
+        System.out.println("| DNI: "+this.actualInvoice.getDniClient()+"                                                                           |");
+        System.out.println("| Price: "+this.actualInvoice.getPriceInvoice()+"                                                                     |");
+        System.out.println("| Change: "+this.actualInvoice.getChangeMoney()+"                                                                   |");
         ConsoleTools.finishConsole();
         
     }

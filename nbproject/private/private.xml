@@ -4,9 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/ClientInterface.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/GInterface.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/model/Invoice.java</file>
             <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/ClientsDrawInterfaces.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/OrderInterface.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/LoginInterface.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/consoleviews/ConsoleTools.java</file>
             <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restaurantsystem/RestaurantSystem.java</file>
             <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/MainInterface.java</file>
+            <file>file:/D:/Lenguajes/Java/RestaurantSystem/src/restauranlogic/views/CreateView.java</file>
         </group>
     </open-files>
 </project-private>
