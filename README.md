@@ -1,2 +1,2 @@
 # RestaurantAplicationConsole
-<img src="https://raw.githubusercontent.com/RestaurantAplicationConsole/main/Restaurant.png"></img>
+<img src="https://raw.githubusercontent.com/amfe-repo/RestaurantAplicationConsole/main/Restaurant.png"></img>
